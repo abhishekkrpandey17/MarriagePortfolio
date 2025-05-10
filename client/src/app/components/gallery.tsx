@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const galleryImages = [
-  "/images/my1.png",
-  "/images/my2.png",
-  "/images/my3.png",
-  "/images/my4.png",
-  "/images/my5.png",
-  "/images/my6.png",
+  "/images/my1.jpg",
+  "/images/my2.jpg",
+  "/images/my3.jpg",
+  "/images/my4.jpg",
+  "/images/my5.jpg",
+  "/images/my6.jpg",
 ];
 
 const GallerySection = () => {
@@ -24,7 +24,7 @@ const GallerySection = () => {
         Gallery
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
         {galleryImages.map((src, index) => (
           <motion.div
             key={index}

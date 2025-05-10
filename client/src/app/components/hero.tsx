@@ -43,7 +43,7 @@ const HeroSection = () => {
         transition={{ duration: 0.7 }}
         className="md:w-1/2 flex justify-center"
       >
-        <div className="relative w-72 h-72 md:w-[26rem] md:h-[26rem] rounded-full overflow-hidden border-4 border-blue-300 shadow-2xl mb-4">
+        <div className="relative w-72 h-72 md:w-[26rem] md:h-[26rem] rounded-full overflow-hidden border-4 border-blue-300 shadow-2xl mb-4 lg:mt-7">
           <Image
             src="/images/me.png"
             alt="Profile Picture"

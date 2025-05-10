@@ -3,38 +3,64 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import Image from "next/image";
 
 const testimonials = [
+  
   {
-    name: "Rohit (Friend)",
-    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
-    image: "/friend1.jpg",
+    name: "Sapana Mishra (Cousin Sister))",
+    text: "Abhishek has always been the most respectful and responsible person in our family. He brings warmth wherever he goes. Any girl would be lucky to have a life partner like him — grounded, kind, and ambitious.",
+    image: "/images/girl.png",
   },
   {
-    name: "Sneha (Sister)",
-    text: "My brother is not just smart, but also the most caring human ever. He'll remember your favorite dessert. Every time!",
-    image: "/sister.jpg",
+    name: "Rohit Shukla (College Friend)",
+    text: "We’ve been friends since our engineering days, and one thing I’ve always admired is Abhishek’s honesty. He’s deeply loyal and mature — someone who balances fun and responsibility like a pro.",
+    image: "/images/boy.png",
   },
   {
-    name: "Karan (Colleague)",
-    text: "He codes like a beast and parties like it's 1999. Super dependable and secretly a softie.",
-    image: "/friend2.jpg",
+    name: "Gudia Tiwari (Bua ji - Paternal Aunt)",
+    text: "He has grown into such a caring young man. He looks after his parents with utmost respect. I am sure he will be a very loving and supportive husband too.",
+    image: "/images/girl.png",
   },
   {
-    name: "Rohit (Friend)",
-    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
-    image: "/friend1.jpg",
+    name: "Ashutosh Mishra (younger brother, Friend)", 
+    text: "Abhishek Bhaiya is the kind of friend you can always count on — calm, solution-oriented, and incredibly humble. His life values make him an ideal life partner.",
+    image: "/images/boy.png",
+  },
+  
+  {
+    name: "Brijendra Mishra (Mama ji - Maternal Uncle)",
+    text: "From a young age, Abhishek has shown great character. He respects family traditions and yet is progressive in thought — the perfect mix for today’s generation.",
+    image: "/images/man.png",
   },
   {
-    name: "Rohit (Friend)",
-    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
-    image: "/friend1.jpg",
+    name: "Priya Mishra (Sister)",
+    text: "He’s not just my brother but my biggest supporter. Abhishek is understanding, respectful towards women, and always puts others first. A genuine gentleman!",
+    image: "/images/girl.png",
   },
   {
-    name: "Rohit (Friend)",
-    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
-    image: "/friend1.jpg",
+    name: "Aritra Chakraborty (Friend,Colleague)",
+    text: "Working with Abhishek was a joy. He’s dependable, soft-spoken, and always ready to help others. I’ve rarely seen someone so balanced and focused in life.",
+    image: "/images/boy.png",
+  },
+  {
+    name: "Surya Narayan Pandey (Uncle)",
+    text: "Abhishek has always been clear about his goals and values. He’s the kind of person who listens with intent and speaks with wisdom. I admire his patience and emotional maturity.",
+    image: "/images/boy.png",
+  },
+  {
+    name: "Mr. Suresh Tiwari (Neighbour & Family Friend)",
+    text: "I’ve known Abhishek since he was a little boy. His upbringing reflects in the way he talks and behaves. He is deeply rooted in family values and is a man of his word.",
+    image: "/images/man.png",
+  },
+  {
+    name: "Shubham (Flatmate)",
+    text: "Living with Abhishek taught me what a calm and composed person he is. He respects boundaries, maintains a healthy routine, and always brings positivity into conversations. A true gem.",
+    image: "/images/boy.png",
+  },
+  {
+    name: "Prof. R. K. Srivastava (Professor, Computer Science)",
+    text: "I had the pleasure of teaching Abhishek Pandey during his undergraduate studies. He was an exceptionally sincere and disciplined student, always respectful and well-mannered in his conduct. Abhishek displayed a sharp intellect, a strong work ethic, and a remarkable sense of responsibility — qualities that go far beyond academics. I am confident he will bring the same dedication, empathy, and maturity to his personal life as well. He will undoubtedly make a wonderful life partner.",
+    image: "/images/man.png",
   },
 ];
 
@@ -69,10 +95,9 @@ const TestimonialSection = () => {
               className="bg-white shadow-xl p-8 rounded-2xl text-center flex flex-col items-center gap-4 transition-all duration-300"
             >
               <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-blue-200 shadow">
-                <Image
+                <img
                   src={item.image}
                   alt={item.name}
-                  fill
                   className="object-cover"
                 />
               </div>
