@@ -7,7 +7,7 @@ const family = [
   {
     name: "Pt. Jagadish Narayan Pandey",
     role: "Grandfather – A guiding force",
-    image: "/.jpg", // Replace with real images in public folder
+    image: "/images/grndficon.png", // Replace with real images in public folder
   },
   {
     name: "Late Om Prakash Pandey",
