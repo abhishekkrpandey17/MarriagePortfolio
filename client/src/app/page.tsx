@@ -16,6 +16,7 @@ import TestimonialSection from './components/testimonials';
 import MarriageLoader from './components/loader';
 import BeliefsSection from './components/beliefs';
 import MarriagePhilosophy from './components/philosophy';
+import LetterSection from './components/lettersection';
 
 const Page = () => {
   const [loading, setLoading] = useState(true);
@@ -57,6 +58,7 @@ const Page = () => {
       </div>
       
       <TestimonialSection />
+      <LetterSection/>
       <ContactSection />
       <Footer />
     </>

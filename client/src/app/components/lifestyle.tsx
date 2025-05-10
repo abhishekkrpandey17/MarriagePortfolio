@@ -12,22 +12,22 @@ const lifestyle = [
   {
     icon: UtensilsCrossed,
     title: "Food Preference",
-    value: "Eggetarian (Prefers vegetarian + eggs)",
+    value: "🟢Pure Vegetarian",
   },
   {
     icon: Droplet,
     title: "Drinking / Smoking",
-    value: "Doesn't drink or smoke",
+    value: "❌ Doesn't drink or smoke",
   },
   {
     icon: Sparkles,
     title: "Hobbies & Interests",
-    value: "Music, Traveling, Cooking, Art, Spiritual Reading",
+    value: "💡 Music, Traveling, Cooking, Art, Spiritual Reading",
   },
   {
     icon: Dumbbell,
     title: "Fitness Routine",
-    value: "Morning walk, weekend trekking, occasional yoga",
+    value: " 📋 Morning walk, weekend trekking, occasional yoga",
   },
 ];
 

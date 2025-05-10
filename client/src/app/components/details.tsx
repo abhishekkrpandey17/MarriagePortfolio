@@ -7,12 +7,12 @@ const details = [
   {
     icon: Calendar,
     title: "Date of Birth",
-    value: "5th May 1995",
+    value: "8th January 2001",
   },
   {
     icon: Ruler,
     title: "Height",
-    value: "5'9\" (175 cm)",
+    value: "5'8\" (172 cm)",
   },
   {
     icon: GraduationCap,
@@ -22,12 +22,12 @@ const details = [
   {
     icon: Briefcase,
     title: "Profession",
-    value: "Full-Stack Developer at MNC",
+    value: "Managing  Partner, Full-Stack Developer",
   },
   {
     icon: Sparkles,
     title: "Hobbies",
-    value: "Music, Travel, Cooking",
+    value: "Playing Chess, Coding, Building Businesses, Spreading Positivity",
   },
   {
     icon: Heart,
@@ -38,7 +38,7 @@ const details = [
 
 const DetailsSection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-200 via-white to-red-100">
+    <section id="details" className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

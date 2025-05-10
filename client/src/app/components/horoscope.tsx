@@ -7,17 +7,17 @@ const horoscope = [
   {
     icon: Sparkles,
     label: "Gotra",
-    value: "Kashyap",
+    value: "Contact for details",
   },
   {
     icon: Star,
     label: "Nakshatra",
-    value: "Rohini",
+    value: "Contact for details",
   },
   {
     icon: Moon,
     label: "Raashi",
-    value: "Vrishabha (Taurus)",
+    value: "Contact for details",
   },
 ];
 

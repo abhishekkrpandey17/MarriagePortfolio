@@ -5,25 +5,30 @@ import Image from "next/image";
 
 const family = [
   {
-    name: "Mr. Rajesh Pandey",
-    role: "Father – A guiding force",
-    image: "/father.jpg", // Replace with real images in public folder
+    name: "Pt. Jagadish Narayan Pandey",
+    role: "Grandfather – A guiding force",
+    image: "/.jpg", // Replace with real images in public folder
   },
   {
-    name: "Mrs. Sunita Pandey",
+    name: "Late Om Prakash Pandey",
+    role: "Father – Forever in our hearts, always by our side. ",
+    image: "/images/father.jpg",
+  },
+  {
+    name: "Sulochana Pandey",
     role: "Mother – The heart of our home",
-    image: "/mother.jpg",
+    image: "/images/mother.jpg",
   },
   {
-    name: "Ritika Pandey",
-    role: "Sister – My forever friend",
-    image: "/sister.jpg",
+    name: "Vivek Pandey",
+    role: "Brother – My forever friend",
+    image: "/images/brother.jpg",
   },
 ];
 
 const FamilySection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
+    <section id="family" className="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-200 via-white to-red-100">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +47,7 @@ const FamilySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className="relative w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-blue-200 shadow-sm ">
+            <div className="relative w-36 h-36 mx-auto rounded-full overflow-hidden border-3 border-blue-200 shadow-sm ">
               <Image
                 src={member.image}
                 alt={member.name}

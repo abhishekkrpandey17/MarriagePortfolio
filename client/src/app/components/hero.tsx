@@ -26,11 +26,13 @@ const HeroSection = () => {
           “Seeking a Life Partner who values love, culture, and companionship.”
         </p>
         
+        <a href="#contact">
           <button
             className="bg-blue-600 inline-block px-10 py-3  text-white font-semibold rounded-full shadow-md hover:bg-blue-700  transform transition-transform duration-200 hover:scale-130"
           >
             Contact
           </button>
+        </a>
         
       </motion.div>
 

@@ -2,23 +2,22 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import {Phone, Linkedin, Mail } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Family", href: "/family" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Details", href: "/details" },
-  { label: "Contact", href: "/contact" },
-  { label: "Download", href: "/biodata.pdf" },
+  { label: "About", href: "#about" },
+  { label: "Family", href: "#family" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Details", href: "#details" },
+  { label: "Contact", href: "#contact" },
+  { label: "Biodata📥", href: "./biodata" },
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "https://linkedin.com" },
-  { icon: Instagram, href: "https://instagram.com" },
-  { icon: Facebook, href: "https://facebook.com" },
-  { icon: Mail, href: "mailto:yourmail@example.com" },
+  { icon: Phone, href: "tel:+91 8090570646" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/abhishek-kr-pandey-57544325a/" },
+  { icon: Mail, href: "mailto:abhishekkrpandey17@gmail.com" },
 ];
 
 const footerVariants = {
@@ -32,7 +31,7 @@ const footerVariants = {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-tl from-blue-300 via-white to-red-200 text-blue-900 py-12 px-6 md:px-20">
+    <footer className="bg-gradient-to-bl from-blue-300 via-white to-red-200 text-blue-900 py-12 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
 
         {/* Logo / Name */}

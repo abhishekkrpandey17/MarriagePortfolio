@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const MarriagePhilosophy = () => {
   return (
-    <section className="relative px-6 md:px-20 py-24 bg-gradient-to-br from-white to-blue-50 overflow-hidden">
+    <section className="relative px-6 md:px-20 py-24 bg-gradient-to-b from-red-100 via-white to-blue-200 overflow-hidden">
       {/* Mandala Background */}
       <div className="absolute inset-0 opacity-10 z-0 pointer-events-none flex justify-center items-center">
         <Image

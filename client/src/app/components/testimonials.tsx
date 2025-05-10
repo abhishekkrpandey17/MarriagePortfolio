@@ -21,6 +21,21 @@ const testimonials = [
     text: "He codes like a beast and parties like it's 1999. Super dependable and secretly a softie.",
     image: "/friend2.jpg",
   },
+  {
+    name: "Rohit (Friend)",
+    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
+    image: "/friend1.jpg",
+  },
+  {
+    name: "Rohit (Friend)",
+    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
+    image: "/friend1.jpg",
+  },
+  {
+    name: "Rohit (Friend)",
+    text: "Abhishek is the most loyal and fun-loving guy I know. He'll cook for you and make you laugh with terrible jokes. A true gem!",
+    image: "/friend1.jpg",
+  },
 ];
 
 const TestimonialSection = () => {

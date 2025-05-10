@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const galleryImages = [
-  "/gallery1.jpg",
-  "/gallery2.jpg",
-  "/gallery3.jpg",
-  "/gallery4.jpg",
-  "/gallery5.jpg",
-  "/gallery6.jpg",
+  "/images/my1.png",
+  "/images/my2.png",
+  "/images/my3.png",
+  "/images/my4.png",
+  "/images/my5.png",
+  "/images/my6.png",
 ];
 
 const GallerySection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
+    <section id="gallery" className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const GallerySection = () => {
         Gallery
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {galleryImages.map((src, index) => (
           <motion.div
             key={index}
@@ -36,8 +36,8 @@ const GallerySection = () => {
             <Image
               src={src}
               alt={`Gallery ${index + 1}`}
-              width={400}
-              height={300}
+              width={250}
+              height={250}
               className="object-cover w-full h-full transform group-hover:scale-110 transition duration-500"
             />
             <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300" />

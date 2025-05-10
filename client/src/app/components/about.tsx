@@ -1,23 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarHeart, GraduationCap, Briefcase, Sparkles } from "lucide-react";
+import { Building2, Laptop2, CalendarHeart, GraduationCap, Briefcase, Sparkles } from "lucide-react";
 
 const timeline = [
   {
-    year: "1995",
-    title: "Born in Varanasi",
+    year: "2001",
+    title: "Born in Mirzapur, Uttar Pradesh, India",
     icon: CalendarHeart,
   },
   {
-    year: "2016",
-    title: "Graduated B.Tech in Computer Science",
+    year: "2019",
+    title: "Started a business in the field of paying guest services in Mumbai.",
+    icon: Building2,
+  },
+  {
+    year: "2022",
+    title: "Started B.Tech in Computer Science with specialization in Artifiicial Intelligence.",
     icon: GraduationCap,
   },
   {
-    year: "2018",
-    title: "Started my journey as a Full-Stack Developer",
+    year: "2024",
+    title: "Started my journey as a Managing Partner and Full-Stack Developer at Codemap Partners.",
     icon: Briefcase,
+  },
+  {
+    year: "2025",
+    title: "Started my journey as a Full-Stack Developer at E-Bindle Pvt Ltd.",
+    icon: Laptop2,
   },
   {
     year: "Now",
@@ -28,7 +38,7 @@ const timeline = [
 
 const AboutSection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200 relative z-10">
+    <section id="" className="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-200 via-white to-red-100 relative z-10">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

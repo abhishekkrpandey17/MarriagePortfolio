@@ -7,22 +7,22 @@ const occupationData = [
   {
     icon: Briefcase,
     label: "Current Position",
-    value: "Senior Full-Stack Developer",
+    value: "Managing partner, Full-Stack Developer",
   },
   {
     icon: Building2,
     label: "Company",
-    value: "Infosys Ltd.",
+    value: "Codemap Partners, E-Bindle Pvt Ltd",
   },
   {
     icon: MapPin,
     label: "Work Location",
-    value: "Bangalore, India",
+    value: "Greater Noida, India",
   },
   {
     icon: Clock,
     label: "Experience",
-    value: "6+ Years in Software Development",
+    value: "2+ Years in Software Development",
   },
   {
     icon: BadgeCheck,
@@ -33,7 +33,7 @@ const occupationData = [
 
 const OccupationSection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-200 via-white to-red-100">
+    <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

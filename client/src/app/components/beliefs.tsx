@@ -28,7 +28,7 @@ const beliefs = [
   {
     icon: SunMoon,
     title: "Festivals",
-    description: "Celebrates Diwali, Holi, Navratri, Chhath Puja and family traditions joyfully.",
+    description: "Celebrates Diwali, Holi, Navratri and family traditions joyfully.",
   },
   {
     icon: BookText,
@@ -39,7 +39,7 @@ const beliefs = [
 
 const BeliefsSection = () => {
   return (
-    <section className="px-6 md:px-20 py-20 bg-white">
+    <section id="beliefs" className="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-200 via-white to-red-100">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
