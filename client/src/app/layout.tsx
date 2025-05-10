@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abhishek ",
+  title: "Abhishek Kr. Pandey",
   description: "Abhishek Kumar Pandey",
 };
 

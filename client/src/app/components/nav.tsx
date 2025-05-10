@@ -40,7 +40,7 @@ const Navbar = () => {
           className="text-xl lg:2xl font-extrabold text-blue-900"
           whileHover={{ scale: 1.1 }}
         >
-          💍 Abishek Kr.Pandey
+          💍 Abishek Kr. Pandey
         </motion.div>
 
         <div className="hidden md:flex space-x-8">
