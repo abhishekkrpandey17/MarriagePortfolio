@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const ContactSection = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "",mobile:"", email: "", message: "" });
 
   return (
     <section className="px-6 md:px-20 py-20 bg-gradient-to-b from-red-100 via-white to-blue-200">
@@ -34,7 +34,18 @@ const ContactSection = () => {
             required
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full border-2 border-blue-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full text-blue-500 border-2 border-blue-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-blue-800 font-medium mb-1">Mobile</label>
+          <input
+            type="tel"
+            required
+            value={form.mobile}
+            onChange={(e) => setForm({ ...form, mobile: e.target.value })}
+            className="w-full text-green-500 border-2 border-blue-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -45,7 +56,7 @@ const ContactSection = () => {
             required
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full border-2 border-blue-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full text-purple-600   border-2 border-blue-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -55,7 +66,7 @@ const ContactSection = () => {
             required
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
-            className="w-full border-2 border-blue-300 px-4 py-2 rounded-md min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full text-yellow-600 border-2 border-blue-300 px-4 py-2 rounded-md min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 

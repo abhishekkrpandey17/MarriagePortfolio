@@ -20,7 +20,7 @@ const HeroSection = () => {
       >
        
         <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
-          Hello, I am <span className="text-blue-600 hover:text-orange-600">Abishek Kr. Pandey</span>
+          नमस्ते 🙏🏻 , I am <br></br><span className="text-blue-600 hover:text-orange-600">Abishek Kr. Pandey</span>
         </h1>
         <p className="text-lg md:text-xl text-blue-800 max-w-xl">
           “Seeking a Life Partner who values love, culture, and companionship.”

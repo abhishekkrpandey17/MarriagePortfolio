@@ -10,8 +10,8 @@ const navItems = [
   { label: "Family", href: "#family" },
   { label: "Gallery", href: "#gallery" },
   { label: "Education", href: "#education" },
-  { label: "Details", href: "#hobbies" },
-  { label: "Download PDF", href: "" },
+  { label: "Details", href: "#details" },
+  { label: "Biodata", href: "/biodata.pdf", download: true },
 ];
 
 const Navbar = () => {
@@ -26,6 +26,17 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ Mobile-safe forced download
+  const handleDownload = (href: string) => {
+    const link = document.createElement("a");
+    link.href = href;
+    link.setAttribute("download", "biodata.pdf");
+    link.setAttribute("target", "_blank");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
@@ -36,28 +47,43 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Logo */}
         <motion.div
-          className="text-xl lg:2xl font-extrabold text-blue-900"
+          className="text-xl lg:text-2xl font-extrabold text-blue-900"
           whileHover={{ scale: 1.1 }}
         >
-          💍 Abishek Kr.Pandey
+          💍 Abishek Kr. Pandey
         </motion.div>
 
-        <div className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            <motion.a
-              key={item.href}
-              href={item.href}
-              className="text-blue-900 font-medium hover:text-blue-600 transform transition-transform duration-200 hover:scale-110"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {item.label}
-            </motion.a>
-          ))}
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-6">
+          {navItems.map((item) =>
+            item.download ? (
+              <motion.a
+                key={item.label}
+                href={item.href}
+                download
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-blue-600 text-white px-4 py-1.5 rounded-md font-semibold hover:bg-blue-700 transition"
+              >
+                {item.label}
+              </motion.a>
+            ) : (
+              <motion.a
+                key={item.href}
+                href={item.href}
+                className="text-blue-900 font-medium hover:text-blue-600 transform transition-transform duration-200 hover:scale-110"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {item.label}
+              </motion.a>
+            )
+          )}
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile Menu Toggle */}
         <div className="md:hidden text-black">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -73,17 +99,31 @@ const Navbar = () => {
           transition={{ duration: 0.4 }}
           className="md:hidden mt-4 bg-blue-50 rounded-lg shadow-lg p-4 space-y-4"
         >
-          {navItems.map((item) => (
-            <motion.a
-              key={item.href}
-              href={item.href}
-              className="block text-blue-900 font-medium hover:text-blue-600"
-              whileHover={{ scale: 1.05 }}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </motion.a>
-          ))}
+          {navItems.map((item) =>
+            item.download ? (
+              <motion.button
+                key={item.label}
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleDownload(item.href);
+                }}
+                whileHover={{ scale: 1.03 }}
+                className="w-full bg-blue-600 text-white text-center px-4 py-2 rounded-md font-semibold hover:bg-blue-700 transition"
+              >
+                {item.label}
+              </motion.button>
+            ) : (
+              <motion.a
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="block text-blue-900 font-medium hover:text-blue-600"
+                whileHover={{ scale: 1.05 }}
+              >
+                {item.label}
+              </motion.a>
+            )
+          )}
         </motion.div>
       )}
     </motion.nav>
