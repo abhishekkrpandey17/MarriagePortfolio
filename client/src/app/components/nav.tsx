@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.div
-          className="text-l lg:2xl font-extrabold text-blue-900"
+          className="text-l lg:text-xl font-bold text-blue-900"
           whileHover={{ scale: 1.1 }}
         >
           💍 Abishek Kr. Pandey
