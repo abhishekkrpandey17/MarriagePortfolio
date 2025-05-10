@@ -31,7 +31,7 @@ const BiodataPage = () => {
           <h2 className="text-xl font-semibold text-blue-800">Personal Details</h2>
           <p><strong>Date of Birth:</strong> 08 January 2001</p>
           <p><strong>Place of Birth:</strong> Lohandi Khurd, Mirzapur, UP</p>
-          <p><strong>Height & Weight:</strong> 5&#39;8&quot;, 60kg</p>
+          <p><strong>Height & Weight:</strong> 5&#39;8&quot;, 70kg</p>
           <p><strong>Gender:</strong> Male</p>
           <p><strong>Religion & Caste:</strong> Hindu, Brahman</p>
           <p><strong>Mother Tongue:</strong> Hindi</p>
@@ -43,8 +43,8 @@ const BiodataPage = () => {
 
           <h2 className="text-xl font-semibold text-blue-800 mt-6">Family Details</h2>
           <p><strong>Grandfather:</strong> Shri Jagadish Narayan Pandey</p>
-          <p><strong>Father:</strong> Late Om Prakash Pandey</p>
-          <p><strong>Mother:</strong> Shri Mati Sulochana Pandey</p>
+          <p><strong>Father:</strong> Swargiy Shri Om Prakash Pandey</p>
+          <p><strong>Mother:</strong> Shrimati Sulochana Pandey</p>
           <p><strong>Siblings:</strong> Younger Brother – Vivek Pandey</p>
           <p><strong>Location:</strong> Mirzapur, Uttar Pradesh</p>
           <p><strong>Social Status:</strong> Respected Family</p>
