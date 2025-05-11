@@ -33,7 +33,7 @@ const BiodataPage = () => {
           <p><strong>Place of Birth:</strong> Lohandi Khurd, Mirzapur, UP</p>
           <p><strong>Height & Weight:</strong> 5&#39;8&quot;, 70kg</p>
           <p><strong>Gender:</strong> Male</p>
-          <p><strong>Religion & Caste:</strong> Hindu, Brahman</p>
+          <p><strong>Religion & Caste:</strong> Hindu, Brahmin</p>
           <p><strong>Mother Tongue:</strong> Hindi</p>
           <p><strong>Marital Status:</strong> Unmarried</p>
           <p><strong>Eating Habits:</strong> Vegetarian</p>
