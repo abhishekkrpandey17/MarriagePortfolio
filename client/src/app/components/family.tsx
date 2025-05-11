@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const family = [
   {
-    name: "Pt. Jagadish Narayan Pandey",
+    name: "Shri Jagadish Narayan Pandey",
     role: "Grandfather – A guiding force",
     image: "/images/grndficon.png", // Replace with real images in public folder
   },
@@ -15,7 +15,7 @@ const family = [
     image: "/images/father.jpg",
   },
   {
-    name: "Sulochana Pandey",
+    name: "Shrimati Sulochana Pandey",
     role: "Mother – The heart of our home",
     image: "/images/mother.jpg",
   },
